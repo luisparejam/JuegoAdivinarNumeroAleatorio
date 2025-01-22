@@ -22,14 +22,16 @@ class MainActivity : AppCompatActivity() {
 
         var numeroAleatorio = Random.nextInt(1, 101)
 
+        var intentos:Int = 0
+
         miBoton.setOnClickListener {
+            intentos++
+
             val valorIntroducido = numeroIntroducido.text.toString().toInt()
 
             if(numeroAleatorio<valorIntroducido) mensajeSalida.text="Mas bajo"
-            else if(numeroAleatorio<valorIntroducido) mensajeSalida.text="Mas alto"
-            else mensajeSalida.text="Correcto!!!"
-
-            
+            else if(numeroAleatorio>valorIntroducido) mensajeSalida.text="Mas alto"
+            else mensajeSalida.text="Correcto!!!, te tomó " + intentos + " intentos."
         }
     }
 }

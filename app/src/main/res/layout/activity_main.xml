@@ -15,23 +15,28 @@
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="" />
+
+        <TextView
             android:id="@+id/salidaMensaje"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="60dp"
+            android:text="He seleccionado un número del 1 al 100. Intenta adivinarlo." />
 
         <EditText
             android:id="@+id/entradaValor"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Name" />
+            android:inputType="text" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="70dp"
+            android:text="Intentar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
